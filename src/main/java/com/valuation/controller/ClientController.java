@@ -42,9 +42,12 @@ public class ClientController {
 	}
 	
 	@PutMapping("/update_client_details/{id}")
+	int i = 10;
+	String s = "I am String";
 	public String updateClient(@PathVariable Long id, @RequestBody Client client  ) {
 		return clientService.updateClientDetails(id, client);
 		
 	}
+	
 	
 }
