@@ -20,6 +20,11 @@ public class ClientController {
 	@Autowired
 	ClientService clientService;
 
+	public void m1(){
+		int i = 10;
+		int j= 20;
+	}
+
 	@PostMapping("/addclient")
 	public Client addClient(@RequestBody Client client) {
 		return clientService.addClient(client);
