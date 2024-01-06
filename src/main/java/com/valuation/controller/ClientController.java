@@ -19,6 +19,11 @@ public class ClientController {
 	
 	@Autowired
 	ClientService clientService;
+	
+	//task 102
+	public void m2(){
+		//logic
+	}
 
 	@PostMapping("/addclient")
 	public Client addClient(@RequestBody Client client) {
